@@ -54,6 +54,7 @@ class T2 extends Thread {
 }
 
 public class Tury {
+
     public static void main(String args[]) {
         Sync s = new Sync();
         T1 t1 = new T1(s);
