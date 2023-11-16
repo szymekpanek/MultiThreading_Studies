@@ -64,7 +64,9 @@ public class DiningPhilosophers {
         }
     }
 
+
     public static void main(String[] args) {
+        System.out.println("Dining philosophers problem");
         final int n = 5;
         final Fork[] forks = new Fork[n];
         for (int i = 0; i < forks.length; i++) {
@@ -75,5 +77,6 @@ public class DiningPhilosophers {
         }
 //        new Philosopher(n, forks[n-1], forks[0]).start();
         new Philosopher(n, forks[0], forks[n-1]).start();
+
     }
 }
