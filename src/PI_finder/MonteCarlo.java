@@ -30,10 +30,12 @@ class MonteCarlo {
     }
 
     public static void main(String[] args) {
-        int allPoints = 1000000;
+        int allPoints = 10000000;
         int numThreads = 10;
 
         MonteCarlo monteCarlo = new MonteCarlo(allPoints, numThreads);
         monteCarlo.runMonteCarlo();
     }
 }
+
+//PI = 3,141592 653589

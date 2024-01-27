@@ -28,11 +28,11 @@ class Watek implements Runnable {
         }
 
         double pi = ((double) pointsInCircle / (double) monteCarlo.allPoints) * 4;
-        System.out.println(pi);
+        System.out.println("Thred ID: " + Thread.currentThread().getId() + " pi = " + pi);
         MonteCarlo.all_pi.add(pi);
         counter++;
 
-        averageCounter(); // Wywołaj metodę averageCounter po każdej iteracji
+        averageCounter();
     }
 
     public void averageCounter() {
